@@ -1,0 +1,139 @@
+/* Estilo do container */
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Estilo do título */
+h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(148, 3, 3);
+    max-width: 100%; /* Garante que o formulário ocupe a largura total disponível */
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
+}
+
+form button {
+    border-radius: 30px;
+    background-color: rgb(227, 0, 0);
+    border: none;
+    height: 40px;
+    width: 100%; /* Ajusta para a largura total disponível */
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+
+form input {
+    border: 1px solid rgb(156, 1, 1);
+    border-radius: 30px;
+    height: 40px;
+    background-color: rgba(220, 20, 60, 0.375);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding-left: 1rem;
+    width: 100%; /* Faz com que os campos de input ocupem toda a largura disponível */
+}
+
+/* Estilo do container de cards com grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta o número de colunas para se adequar ao tamanho da tela */
+    gap: 20px; /* Espaçamento entre os cards */
+    width: 80%; /* Ajusta a largura do container */
+    margin-top: 20px;
+    box-sizing: border-box; /* Evita que o container ultrapasse o limite da tela */
+}
+
+/* Estilo de cada card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(148, 3, 3);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+}
+
+.card p {
+    margin-left: 10px;
+    font-weight: bold;
+
+    & span {
+        font-weight: normal;
+    }
+}
+
+.card button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 10px;
+}
+
+.card button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.card button:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+/* Media Query para telas menores, como dispositivos móveis */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Impede o scroll horizontal */
+    }
+
+    .container {
+        padding-top: 50px;
+    }
+
+    form {
+        width: 90%; /* Ajusta o formulário para 90% da largura da tela */
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* Coloca os cards em uma única coluna em telas menores */
+        width: 90%; /* Garante que a largura do container ocupe toda a tela */
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+    }
+}
+
