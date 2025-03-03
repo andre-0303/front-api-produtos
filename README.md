@@ -1,12 +1,33 @@
-# React + Vite
+# Cadastro de Produtos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse é o Front End de uma aplicação com servidor e uma api consumindo banco de dados do MongoDb. É um sistema de cadastro de produtos, e listagem abaixo do formulário. 
 
-Currently, two official plugins are available:
+| Detalhes do Projeto |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Cadastro de Produtos**
+| :label: Tecnologias | React, Vite, axios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias
 
-## Expanding the ESLint configuration
+![](https://img.shields.io/badge/React-0075A2?style=for-the-badge&logo=react&logoColor=white)
+![](https://img.shields.io/badge/Vite-1C5253?style=for-the-badge&logo=vite&logoColor=white)
+![](https://img.shields.io/badge/Axios-43853D?style=for-the-badge&logo=axios&logoColor=white)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#
+
+## Como testar esse projeto?
+
+1. **Primeiro passo**: instalar as dependências
+
+    ~~~sh
+     npm install
+    ~~~
+
+2. **Segundo passo**: Iniciar servidor local
+
+    ~~~sh
+    npm run dev
+    ~~~
+
+3. **Terceiro passo**: Acessar aplicação
+  (http://localhost:5173)
